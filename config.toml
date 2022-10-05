@@ -1,0 +1,45 @@
+baseurl = "https://mariage.chaniaetpierre.fr/"
+title = "Site web du Mariage de Chania et Pierre"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+
+[params]
+    author = "Chania & Pierre"
+    avatar = "monograme.png"
+    # avatarDescription = "My avatar description"
+    favicon = "favicon.ico"
+    description = """
+      Vous pouvez retrouver les photos et vidéos de notre
+      mariage depuis ces liens :
+    """
+    publicationYear = "2022"
+    custom_css = ["/css/custom.css"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+
+[[menu.main]]
+    identifier = "Youtube"
+    name = "Videos" #If display text link, cancel comment out
+    pre = "<i class='fab fa-youtube fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "https://youtube.com/playlist?list=PLSwb3jo-nyMSPuZLhZn_rovQuqUifJ3WQ"
+    weight = 10
+
+[[menu.main]]
+    identifier = "Photos"
+    name = "Photos"
+    pre = "<i class='fas fa-images fa-lg'></i>"
+    url = "https://1drv.ms/u/s!AnsK-ix1NlQ8i5wkRNOovepPnNB3Yg?e=z1VBw7"
+    weight = 40

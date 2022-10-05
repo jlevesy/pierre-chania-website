@@ -1,0 +1,27 @@
+body {
+  background-color: #faeee5;
+}
+
+.avatar-border {
+  display: none;
+}
+
+header .avatar img {
+  width: 150px;
+}
+
+header .avatarMask {
+  clip-path: none;
+}
+
+#profile p {
+  color: #cbb07d;
+}
+
+.author {
+  color: #cbb07d;
+}
+
+nav ul li a {
+  font-size: 20px;
+}
